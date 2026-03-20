@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Design Process at FuselabCreative</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Public+Sans:wght@600&family=Red+Hat+Display:wght@500;700&family=Red+Hat+Text:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="presentation-shell">
+      <aside class="rail">
+        <div class="rail__brand">
+          <img class="rail-logo" src="flc-logo.svg" alt="FLC logo" />
+          <h1>New Design Process at FuselabCreative</h1>
+        </div>
+
+        <nav class="rail-nav" aria-label="Presentation sections">
+          <a href="#cover" class="is-active">01 Cover</a>
+          <a href="#contents">02 Table of Contents</a>
+          <a href="#core-loop">03 Core Loop</a>
+          <a href="#section-break">04 Process Shift</a>
+          <a href="#analysis">05 Before Wireframes</a>
+          <a href="#stack">06 Shared Exploration Stack</a>
+          <a href="#loop">07 Agent to Figma Loop</a>
+          <a href="#ux-flow">08 UX Flow</a>
+          <a href="#ui-system">09 UI + Design System</a>
+          <a href="#delivery">10 Delivery</a>
+          <a href="#summary">11 Final Outcome</a>
+        </nav>
+      </aside>
+
+      <main class="deck" id="deck">
+        <div class="slides">
+          <section
+            class="slide slide--dark slide--hero"
+            id="cover"
+            data-title="New Design Process at FuselabCreative"
+            data-hint="Open with the workflow thesis and its outcomes"
+          >
+            <video
+              class="hero-slide-video"
+              src="plexus-network-background-2026-01-28-04-11-11-utc.mp4"
+              autoplay
+              muted
+              loop
+              playsinline
+              aria-hidden="true"
+            ></video>
+            <div class="hero-slide-overlay" aria-hidden="true"></div>
+            <div class="hero-slide-tint" aria-hidden="true"></div>
+
+            <div class="slide-chrome">
+              <span class="slide-number">01</span>
+              <span class="slide-label">FuselabCreative</span>
+            </div>
+
+            <div class="hero-layout hero-layout--single">
+              <div class="hero-copy">
+                <p class="eyebrow">Design operations update</p>
+                <h3>New Design Process at FuselabCreative.</h3>
+                <p class="slide-intro">
+                  We now begin before wireframes: first analyzing project
+                  materials, then using ClaudeCode or Codex to explore product
+                  structure, user paths, and edge cases before moving into
+                  Figma.
+                </p>
+
+                <div class="hero-tags">
+                  <span>Analyze materials</span>
+                  <span>Explore with agents</span>
+                  <span>Move between CLI and Figma</span>
+                  <span>Deliver repo-ready product</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide-footer">
+              <span>info@fuselabcreative.com</span>
+              <span>Integrated design workflow for faster, clearer delivery</span>
+            </div>
+          </section>
+
+          <section
+            class="slide slide--dark slide--toc"
+            id="contents"
+            data-title="Table of Contents"
+            data-hint="Outline the new process from analysis to delivery"
+          >
+            <div class="slide-chrome">
+              <span class="slide-number">02</span>
+              <span class="slide-label">Deck overview</span>
+            </div>
+
+            <div class="toc-layout">
+              <div>
+                <p class="eyebrow">Navigation page</p>
+                <h3>Table of Contents</h3>
+              </div>
+              <ol class="toc-list" id="tocList"></ol>
+            </div>
+
+            <div class="slide-footer">
+              <span>New Design Process at FuselabCreative</span>
+              <span>FuselabCreative</span>
+            </div>
+          </section>
+
+          <section
+            class="slide slide--light slide--diagram"
+            id="core-loop"
+            data-title="Core Loop"
+            data-hint="Show the end-to-end loop from materials to GitHub handoff"
+          >
+            <div class="slide-chrome">
+              <span class="slide-number">03</span>
+              <span class="slide-label">Core loop</span>
+            </div>
+
+            <div class="light-header light-header--stacked">
+              <div>
+                <p class="page-kicker">Core Loop</p>
+                <h3>One loop connects analysis, exploration, design, and delivery.</h3>
+              </div>
+              <p class="section-note">
+                The workflow moves from material review into agent exploration,
+                through Figma and back to the agent, then into manual UI and a
+                GitHub handoff supported by Vercel previews.
+              </p>
+            </div>
+
+            <div class="core-loop-board">
+              <div class="core-loop-flow" aria-label="Core loop diagram">
+                <article class="loop-node">
+                  <span class="loop-node__index">01</span>
+                  <div class="loop-node__icon loop-node__icon--carbon" aria-hidden="true">
+                    <svg viewBox="0 0 32 32" role="img">
+                      <path d="M6 8h20v2H6zM6 15h20v2H6zM6 22h12v2H6z"></path>
+                      <path d="M22 20l4 4-4 4-1.4-1.4 1.6-1.6H18v-2h4.2l-1.6-1.6z"></path>
+                    </svg>
+                  </div>
+                  <h4>Material review</h4>
+                  <p>Requirements, references, notes, and constraints are organized before wireframes begin.</p>
+                </article>
+
+                <div class="loop-arrow" aria-hidden="true">&rarr;</div>
+
+                <article class="loop-node">
+                  <span class="loop-node__index">02</span>
+                  <div class="loop-node__icon loop-node__icon--carbon" aria-hidden="true">
+                    <svg viewBox="0 0 32 32" role="img">
+                      <path d="M16 5l8 4.5v13L16 27l-8-4.5v-13L16 5zm0 2.3L10 10.2v11.6l6 3.4 6-3.4V10.2l-6-2.9z"></path>
+                      <path d="M15 11h2v10h-2zM11 15h10v2H11z"></path>
+                    </svg>
+                  </div>
+                  <h4>Agent exploration</h4>
+                  <p>ClaudeCode or Codex tests architecture, routes, states, and edge cases quickly.</p>
+                </article>
+
+                <div class="loop-arrow" aria-hidden="true">&rarr;</div>
+
+                <article class="loop-node">
+                  <span class="loop-node__index">03</span>
+                  <div class="loop-node__icon loop-node__icon--figma" aria-hidden="true">
+                    <svg viewBox="0 0 38 57" role="img">
+                      <path d="M9.5 28.5a9.5 9.5 0 1 1 0-19h9.5v19H9.5z" fill="#0acf83"></path>
+                      <path d="M19 0h9.5a9.5 9.5 0 1 1 0 19H19V0z" fill="#ff7262"></path>
+                      <path d="M9.5 0H19v19H9.5a9.5 9.5 0 1 1 0-19z" fill="#f24e1e"></path>
+                      <path d="M9.5 28.5H19V38a9.5 9.5 0 1 1-9.5-9.5z" fill="#a259ff"></path>
+                      <path d="M19 19h9.5a9.5 9.5 0 1 1 0 19H19V19z" fill="#1abcfe"></path>
+                    </svg>
+                  </div>
+                  <h4>Figma flow</h4>
+                  <p>The strongest structure becomes a visible UX flow that can be reviewed and refined.</p>
+                </article>
+
+                <div class="loop-arrow" aria-hidden="true">&rarr;</div>
+
+                <article class="loop-node">
+                  <span class="loop-node__index">04</span>
+                  <div class="loop-node__icon loop-node__icon--carbon" aria-hidden="true">
+                    <svg viewBox="0 0 32 32" role="img">
+                      <path d="M16 6a10 10 0 1010 10h-2a8 8 0 11-2.3-5.7L19 13h7V6l-2.9 2.9A9.95 9.95 0 0016 6z"></path>
+                    </svg>
+                  </div>
+                  <h4>Agent refinement</h4>
+                  <p>The flow goes back to the agent to challenge assumptions and fill state or logic gaps.</p>
+                </article>
+
+                <div class="loop-arrow" aria-hidden="true">&rarr;</div>
+
+                <article class="loop-node">
+                  <span class="loop-node__index">05</span>
+                  <div class="loop-node__icon loop-node__icon--carbon" aria-hidden="true">
+                    <svg viewBox="0 0 32 32" role="img">
+                      <path d="M7 7h18v18H7zM9 9v14h14V9z"></path>
+                      <path d="M12 12h8v2h-8zM12 17h8v2h-8z"></path>
+                    </svg>
+                  </div>
+                  <h4>Manual UI</h4>
+                  <p>Visual craft and the design system are applied to an already-validated UX structure.</p>
+                </article>
+
+                <div class="loop-arrow" aria-hidden="true">&rarr;</div>
+
+                <article class="loop-node">
+                  <span class="loop-node__index">06</span>
+                  <div class="loop-node__icon loop-node__icon--stack" aria-hidden="true">
+                    <div class="stack-logo-row">
+                      <svg class="github-mark" viewBox="0 0 24 24" role="img">
+                        <path d="M12 .5a12 12 0 00-3.79 23.39c.6.11.82-.26.82-.58v-2.23c-3.34.72-4.04-1.42-4.04-1.42-.55-1.38-1.33-1.75-1.33-1.75-1.08-.74.08-.72.08-.72 1.2.08 1.83 1.22 1.83 1.22 1.06 1.82 2.79 1.29 3.47.98.11-.78.42-1.29.76-1.59-2.66-.3-5.47-1.33-5.47-5.91 0-1.31.47-2.38 1.22-3.22-.12-.3-.53-1.52.12-3.16 0 0 1-.32 3.3 1.23a11.5 11.5 0 016 0c2.29-1.55 3.29-1.23 3.29-1.23.66 1.64.25 2.86.12 3.16.76.84 1.22 1.91 1.22 3.22 0 4.59-2.81 5.61-5.49 5.9.43.37.82 1.11.82 2.24v3.32c0 .32.22.7.83.58A12 12 0 0012 .5z"></path>
+                      </svg>
+                      <svg class="vercel-mark" viewBox="0 0 76 65" role="img">
+                        <path d="M37.59 0l37.59 65H0L37.59 0z"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <h4>GitHub handoff</h4>
+                  <p>GitHub stores the working product foundation while Vercel supports shared live review.</p>
+                </article>
+              </div>
+            </div>
+
+            <div class="slide-footer slide-footer--light">
+              <span>03</span>
+              <span>Core loop from materials to GitHub handoff</span>
+            </div>
+          </section>
+
+          <section
+            class="slide slide--dark slide--section-break"
+            id="section-break"
+            data-title="Process Shift"
+            data-hint="Introduce the new design operating model"
+          >
+            <div class="slide-chrome">
+              <span class="slide-number">04</span>
+              <span class="slide-label">Process shift</span>
+            </div>
+
+            <div class="section-break-copy">
+              <p class="eyebrow">What is changing</p>
+              <h3>We design the product logic before we design the interface.</h3>
+              <p class="slide-intro">
+                The new process integrates agent exploration into the earliest
+                stage of design, keeps knowledge in GitHub and Vercel for the
+                team and client, and uses Figma as the place where validated UX
+                flows turn into crafted UI.
+              </p>
+            </div>
+
+            <div class="slide-footer">
+              <span>Research, exploration, craft, and delivery inside one workflow</span>
+              <span>FuselabCreative</span>
+            </div>
+          </section>
+
+          <section
+            class="slide slide--light"
+            id="analysis"
+            data-title="Before Wireframes"
+            data-hint="Show what happens before the first wireframe"
+          >
+            <div class="light-header">
+              <div>
+                <p class="page-kicker">Before Wireframes</p>
+                <h3>Design starts with project materials, not screens.</h3>
+              </div>
+              <p class="section-note">
+                Before any wireframing begins, the designer reviews briefs,
+                requirements, stakeholder notes, references, and technical
+                constraints to understand what the product must do.
+              </p>
+            </div>
+
+            <div class="challenge-grid" id="challengeGrid"></div>
+
+            <div class="slide-footer slide-footer--light">
+              <span>05</span>
+              <span>Project analysis before wireframing</span>
+            </div>
+          </section>
+
+          <section
+            class="slide slide--light"
+            id="stack"
+            data-title="Shared Exploration Stack"
+            data-hint="Explain how agents, GitHub, and Vercel work together"
+          >
+            <div class="light-header">
+              <div>
+                <p class="page-kicker">Shared Exploration Stack</p>
+                <h3>ClaudeCode or Codex become the first exploration partner.</h3>
+              </div>
+              <p class="section-note">
+                Exploration is no longer isolated in notes. Findings, prompts,
+                structures, and early artifacts are stored in GitHub and shared
+                through Vercel so colleagues and clients can follow progress.
+              </p>
+            </div>
+
+            <div class="opportunity-layout">
+              <aside class="spotlight-card">
+                <span>Approach summary</span>
+                <strong>The agent helps explore faster, but GitHub and Vercel make the work visible, reviewable, and reusable.</strong>
+                <small>
+                  Instead of keeping early thinking in private files, we create a
+                  living project space where the team can track decisions and the
+                  client can see momentum earlier.
+                </small>
+              </aside>
+              <div class="opportunity-grid" id="opportunityGrid"></div>
+            </div>
+
+            <div class="slide-footer slide-footer--light">
+              <span>06</span>
+              <span>Shared workspace for design exploration</span>
+            </div>
+          </section>
+
+          <section
+            class="slide slide--light"
+            id="loop"
+            data-title="Agent to Figma Loop"
+            data-hint="Explain how the process moves between CLI and Figma"
+          >
+            <div class="light-header">
+              <div>
+                <p class="page-kicker">Working Loop</p>
+                <h3>We move from CLI Agent to Figma and back again.</h3>
+              </div>
+              <p class="section-note">
+                The exploration phase is iterative: the designer tests ideas in
+                ClaudeCode or Codex, translates the best structure into Figma,
+                and returns to the agent to refine flows, states, and gaps until
+                the UX direction is solid.
+              </p>
+            </div>
+
+            <div class="timeline-list timeline-list--compact" id="roadmapSteps"></div>
+
+            <div class="slide-footer slide-footer--light">
+              <span>07</span>
+              <span>Iterative loop between CLI exploration and Figma</span>
+            </div>
+          </section>
+
+          <section
+            class="slide slide--light slide--project-profile"
+            id="ux-flow"
+            data-title="UX Flow"
+            data-hint="Detail how UX flow becomes the first validated product structure"
+          >
+            <div class="project-profile-top">
+              <div>
+                <p class="page-kicker">Phase 01</p>
+                <h3>UX flow proves the product structure.</h3>
+              </div>
+              <p class="project-profile-summary">
+                By the time the UX flow is approved, the navigation logic, key
+                task paths, branches, and major states have already been
+                explored and pressure-tested.
+              </p>
+            </div>
+
+            <div class="phase-layout">
+              <div class="phase-main">
+                <div class="phase-step-grid">
+                  <article class="phase-step-card">
+                    <span>01</span>
+                    <h4>Material review</h4>
+                    <p>
+                      Briefs, references, constraints, and existing product
+                      knowledge are collected first.
+                    </p>
+                  </article>
+                  <article class="phase-step-card">
+                    <span>02</span>
+                    <h4>Agent exploration</h4>
+                    <p>
+                      ClaudeCode or Codex helps map routes, states, IA options,
+                      and edge cases quickly.
+                    </p>
+                  </article>
+                  <article class="phase-step-card">
+                    <span>03</span>
+                    <h4>Figma flow draft</h4>
+                    <p>
+                      The strongest path is translated into UX flow screens and
+                      iterated until it is clear.
+                    </p>
+                  </article>
+                </div>
+              </div>
+
+              <aside class="project-feature-card project-feature-card--phase" id="uxFlowFeatures"></aside>
+            </div>
+
+            <div class="slide-footer slide-footer--light">
+              <span>08</span>
+              <span>Validated UX flow before visual styling</span>
+            </div>
+          </section>
+
+          <section
+            class="slide slide--light slide--project-profile"
+            id="ui-system"
+            data-title="UI and Design System"
+            data-hint="Explain how manual UI and the design system are applied after UX is ready"
+          >
+            <div class="project-profile-top">
+              <div>
+                <p class="page-kicker">Phase 02</p>
+                <h3>Manual UI builds on approved UX.</h3>
+              </div>
+              <p class="project-profile-summary">
+                Once the flow is ready, visual design does not start from zero.
+                It builds on a stable UX foundation, which makes system thinking
+                more intentional and screen production more consistent.
+              </p>
+            </div>
+
+            <div class="phase-layout">
+              <div class="phase-main">
+                <div class="phase-step-grid">
+                  <article class="phase-step-card">
+                    <span>01</span>
+                    <h4>Foundations</h4>
+                    <p>
+                      Typography, color, spacing, states, and rules are defined
+                      as a reusable system.
+                    </p>
+                  </article>
+                  <article class="phase-step-card">
+                    <span>02</span>
+                    <h4>Components</h4>
+                    <p>
+                      Manual UI craft turns the flow into purposeful screens and
+                      reusable interface parts.
+                    </p>
+                  </article>
+                  <article class="phase-step-card">
+                    <span>03</span>
+                    <h4>Apply to UX</h4>
+                    <p>
+                      The design system is then applied to the previously
+                      created UX flow for a coherent product experience.
+                    </p>
+                  </article>
+                </div>
+              </div>
+
+              <aside class="project-feature-card project-feature-card--phase" id="uiSystemFeatures"></aside>
+            </div>
+
+            <div class="slide-footer slide-footer--light">
+              <span>09</span>
+              <span>Manual UI craft plus design system application</span>
+            </div>
+          </section>
+
+          <section
+            class="slide slide--light slide--project-profile"
+            id="delivery"
+            data-title="Delivery"
+            data-hint="Show how GitHub and Vercel support internal and client collaboration"
+          >
+            <div class="project-profile-top">
+              <div>
+                <p class="page-kicker">Phase 03</p>
+                <h3>GitHub handoff makes delivery build-ready.</h3>
+              </div>
+              <p class="project-profile-summary">
+                Delivery is not just a Figma file. Because GitHub and Vercel are
+                connected during the process, the final handoff includes working
+                structure, shared history, and a strong implementation head
+                start.
+              </p>
+            </div>
+
+            <div class="phase-layout">
+              <div class="phase-main">
+                <div class="phase-step-grid">
+                  <article class="phase-step-card">
+                    <span>01</span>
+                    <h4>GitHub repository</h4>
+                    <p>
+                      Exploration notes, decisions, and implementation-ready
+                      artifacts stay organized in one place.
+                    </p>
+                  </article>
+                  <article class="phase-step-card">
+                    <span>02</span>
+                    <h4>Vercel previews</h4>
+                    <p>
+                      Colleagues and clients can review progress through live
+                      previews instead of waiting for static exports.
+                    </p>
+                  </article>
+                  <article class="phase-step-card">
+                    <span>03</span>
+                    <h4>Strong handoff</h4>
+                    <p>
+                      The client gets a near-ready product foundation that
+                      supports faster development and clearer collaboration.
+                    </p>
+                  </article>
+                </div>
+              </div>
+
+              <aside class="project-feature-card project-feature-card--phase" id="deliveryFeatures"></aside>
+            </div>
+
+            <div class="slide-footer slide-footer--light">
+              <span>10</span>
+              <span>GitHub and Vercel powered client handoff</span>
+            </div>
+          </section>
+
+          <section
+            class="slide slide--light slide--overview"
+            id="summary"
+            data-title="Final Outcome"
+            data-hint="Close with the benefits of the new workflow"
+          >
+            <div class="light-header">
+              <div>
+                <p class="page-kicker">Final Outcome</p>
+                <h3>A process that gives the team clarity and gives the client momentum.</h3>
+              </div>
+              <p class="section-note">
+                The result is a more informed start, a stronger UX foundation, a
+                more intentional UI system, and a handoff that is much closer to
+                a buildable product.
+              </p>
+            </div>
+
+            <div class="page-template-grid" id="templatePages"></div>
+
+            <div class="slide-footer slide-footer--light">
+              <span>11</span>
+              <span>New Design Process at FuselabCreative summary</span>
+            </div>
+          </section>
+        </div>
+
+        <header class="deck-topbar">
+          <div>
+            <p class="eyebrow">Presentation flow</p>
+            <h2 id="topbarTitle">Hero screen</h2>
+          </div>
+
+          <div class="deck-status">
+            <div class="progress-block">
+              <span>Slide <b id="slideIndex">01</b> / <b id="slideTotal">10</b></span>
+              <div class="progress-track" aria-hidden="true">
+                <span id="progressFill"></span>
+              </div>
+            </div>
+
+            <div class="control-row">
+              <button class="ghost-button" id="prevSlide" type="button">
+                Previous
+              </button>
+              <button class="primary-button" id="nextSlide" type="button">
+                Next
+              </button>
+            </div>
+          </div>
+        </header>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
